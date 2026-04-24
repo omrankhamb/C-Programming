@@ -2,19 +2,15 @@
 
 int main()
 {
-    int n =4;
-    printf("enter a number. ");
-    scanf("%d", &n);
-    // codition n>0 and 
-    int sum = 0;
-    int lastdigit = 0;
-    while(n!=0){
-    {
-    lastdigit = n%10;
-    sum = sum +lastdigit;
-    n=n/10;
-    }
-    }
-    printf("The sum of digits are %d,",sum);
+int n,digit=0,sum=0;
+printf("enter number :");
+scanf("%d",&n);
+while(n!=0){
+digit=n%10;
+sum=sum+digit;
+n=n/10;
+
+}
+printf("%d",sum);
     return 0;
-}// sum = sum of lsast digit
+}
