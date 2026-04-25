@@ -2,16 +2,31 @@
 
 int main()
 {
-    int n,sum=0;
-    printf("enter number :");
+    int num=1,sum=0,i,count=1,n;
+    printf("how many numbers you want ro print");
     scanf("%d",&n);
-    for(int i=1 ; i<n ; i++) {
-        if(n%i==0) {
-            sum=sum+i;
+    printf("perfect numbers are:");
+    while(count<=n)
+    {   for(i=1 ; i<num ; i++)
+        {   if(num%i==0)
+                sum=sum+i;
         }
+        if(num==sum)
+        {
+            printf("%d\t",num);
+            count++;
+        }
+        num++,sum=0;
+
+
+
+
+
+
+
+
+
     }
-    if(sum==n) printf("perfect number");
-    else
-        printf("not perfect number");
+    printf("Hello world!");
     return 0;
 }
